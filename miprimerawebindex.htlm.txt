@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso de Virología - Universidad Antonio Nariño</title>
+  <style>
+    /* Fondo con Torre Colpatria */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: url('images/torre-colpatria.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+    }
+    /* Cabecera */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0, 91, 172, 0.8);
+      padding: 10px 20px;
+    }
+    header .logo, header .flag {
+      height: 50px;
+    }
+    /* Menú */
+    nav { background: rgba(0, 51, 102, 0.9); }
+    nav ul { list-style: none; margin: 0; padding: 0; display: flex; }
+    nav li { position: relative; }
+    nav a {
+      display: block;
+      padding: 10px 15px;
+      color: white;
+      text-decoration: none;
+    }
+    nav a:hover { background: #002244; }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background: rgba(0, 51, 102, 0.95);
+      top: 100%; left: 0;
+      min-width: 150px;
+      z-index: 10;
+    }
+    .dropdown:hover .dropdown-content { display: block; }
+    .dropdown-content li { width: 100%; }
+    /* Contenido principal */
+    main { padding: 20px; background: rgba(255, 255, 255, 0.9); }
+    section { margin-bottom: 40px; }
+    /* Pie de página con virus animado */
+    footer {
+      position: relative;
+      background: rgba(0, 91, 172, 0.8);
+      color: white;
+      text-align: center;
+      padding: 40px 20px 80px;
+      overflow: hidden;
+    }
+    .virus-anim {
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      animation: float 6s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translate(-50%, 0); }
+      50% { transform: translate(-50%, -20px); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="images/logo-unan.png" alt="Logo Universidad Antonio Nariño" class="logo">
+    <img src="images/flag-colombia.png" alt="Bandera de Colombia" class="flag">
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li class="dropdown">
+        <a href="#">Secciones ▼</a>
+        <ul class="dropdown-content">
+          <li><a href="#descripcion">Descripción</a></li>
+          <li><a href="#plan">Plan de Estudios</a></li>
+          <li><a href="#instructores">Instructores</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </li>
+      <li><a href="#inscripcion">Inscripción</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="descripcion">
+      <h2>Descripción del Curso</h2>
+      <p>Aprende los fundamentos de la virología, virus actuales de importancia clínica y hablaremos de mitos y realidades.</p>
+    </section>
+    <section id="plan">
+      <h2>Plan de Estudios</h2>
+      <ul>
+        <li>Módulo 1: Premios nobel de medicina gracias a la virología</li>
+        <li>Módulo 2: Virus que inducen cáncer</li>
+        <li>Módulo 3: Virus emergentes monkeypox y Ébola</li>
+        <li>Módulo 4: Mitos y realidades</li>
+      </ul>
+    </section>
+    <section id="instructores">
+      <h2>Instructores</h2>
+      <p>Dra. Adriana García</p>
+    </section>
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>Email: virologia@unan.edu.co | Teléfono: +57 1 2345678</p>
+    </section>
+    <section id="inscripcion">
+      <h2>Inscripción</h2>
+      <p>Inscríbete gratuitamente en nuestro repositorio de GitHub Pages.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Universidad Antonio Nariño</p>
+    <img src="images/virus-surrealista.png" alt="Virus animado" class="virus-anim">
+  </footer>
+</body>
+</html>
